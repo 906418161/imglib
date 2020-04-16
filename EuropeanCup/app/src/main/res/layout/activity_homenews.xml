@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#EDEDED" />
+
+    <LinearLayout
+        android:id="@+id/homenews_closse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/home_img"
+            android:drawablePadding="5dp"
+            android:text="球星标签"
+            android:textColor="@color/tblack"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/homenews_closse_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bbs_button" />
+    </LinearLayout>
+
+    <com.donkingliang.labels.LabelsView
+        android:id="@+id/homenews_labels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:isIndicator="false"
+        app:labelBackground="@drawable/enwslab_select"
+        app:labelTextColor="@drawable/leable_text"
+        app:labelTextPaddingBottom="5dp"
+        app:labelTextPaddingLeft="10dp"
+        app:labelTextPaddingRight="10dp"
+        app:labelTextPaddingTop="5dp"
+        app:labelTextSize="10sp"
+        app:lineMargin="10dp"
+        app:maxLines="3"
+        app:maxSelect="5"
+        app:minSelect="1"
+        app:selectType="SINGLE_IRREVOCABLY"
+        app:wordMargin="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#EDEDED" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/home_img"
+        android:drawablePadding="5dp"
+        android:text="动态"
+        android:textColor="@color/tblack"
+        android:textSize="15dp" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/homenews_refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlAccentColor="@color/colorAccent"
+        app:srlPrimaryColor="@color/transparent">
+    <ListView
+        android:id="@+id/homenews_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

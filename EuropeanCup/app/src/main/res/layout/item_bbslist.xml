@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="32dp"
+                android:layout_height="32dp">
+
+                <cn.com.imageselect.widget.BorderRoundImageView
+                    android:id="@+id/bbslist_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    app:border_outcolor="@color/colorAccent" />
+
+                <ImageView
+                    android:id="@+id/bbslist_v"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/people_v" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/bbslist_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="名字名字"
+                android:textColor="#363635"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/bbslist_follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/people_follow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/bbslist_j"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/bbslist_j" />
+
+            <TextView
+                android:id="@+id/bbslist_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2020年，有什么好看的比赛？具体播出时间是什么时候？"
+                android:textColor="@color/tblack"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bbslist_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="【超详细解析】西悉尼流浪者VS悉尼FC 信心十足的一场澳超！"
+            android:textColor="@color/gblack"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="15sp" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/bbslist_img_card"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/transparent"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp">
+
+            <cn.com.imageselect.widget.MyImageView
+                android:id="@+id/bbslist_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+        </android.support.v7.widget.CardView>
+
+
+        <cn.com.imageselect.widget.ThisGridView
+            android:id="@+id/bbslist_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:horizontalSpacing="5dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="5dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/bbslist_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#EAEAEA"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/bbslist_gameName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="预选赛D组第10轮"
+                android:textColor="@color/tblack"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/bbslist_teamName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="北马其顿  VS   以色列"
+                android:textColor="@color/tblack"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bbslist_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="03-15"
+                android:textColor="@color/nblack"
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:id="@+id/bbslist_buttom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/bbslist_theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/bbs_type"
+                    android:drawablePadding="5dp"
+                    android:text="主题主题"
+                    android:textColor="@color/nblack"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/bbslist_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:drawableLeft="@drawable/bbs_talk"
+                    android:drawablePadding="5dp"
+                    android:text="0"
+                    android:textColor="@color/nblack"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:id="@+id/bbslist_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/bbslist_likeImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/newscommet_like" />
+
+                    <TextView
+                        android:id="@+id/bbslist_likeNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="0"
+                        android:textColor="@color/nblack"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#EAEAEA" />
+</LinearLayout>

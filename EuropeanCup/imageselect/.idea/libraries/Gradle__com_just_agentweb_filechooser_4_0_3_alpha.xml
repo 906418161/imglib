@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.just.agentweb:filechooser-4.0.3-alpha">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/filechooser-4.0.3-alpha.aar/e27622fad390c9ea185bfdf46e4367ca/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/filechooser-4.0.3-alpha.aar/e27622fad390c9ea185bfdf46e4367ca/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.just.agentweb/filechooser/4.0.3-alpha/1bd07bea3c55eae934e2cfd93d1a51be2cb6d875/filechooser-4.0.3-alpha-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

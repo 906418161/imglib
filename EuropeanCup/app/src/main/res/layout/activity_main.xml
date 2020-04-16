@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/framerela"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <RadioButton
+                android:id="@+id/tab_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/home_select"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="首页"
+                android:textColor="@drawable/home_text"
+                android:textSize="10sp" />
+
+
+            <RadioButton
+                android:id="@+id/tab_match"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/match_select"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="赛事"
+                android:textColor="@drawable/home_text"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/tab_rank"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/rank_select"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="排行榜"
+                android:textColor="@drawable/home_text"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/tab_unscramble"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/unscramble_select"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="解读"
+                android:textColor="@drawable/home_text"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/tab_bbs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/bbs_select"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="发现"
+                android:textColor="@drawable/home_text"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/tab_other"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/other_select"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="我的"
+                android:textColor="@drawable/home_text"
+                android:textSize="10sp" />
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/realtabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/radioGroup" />
+
+        <cn.com.imageselect.util.fragment.TabFragmentHost
+            android:id="@+id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:id="@android:id/tabhost"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0" />
+        </cn.com.imageselect.util.fragment.TabFragmentHost>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,169 @@
+<resources>
+    <!--图片选择与预览-->
+    <declare-styleable name="ucrop_UCropView">
+
+        <!--Crop image view-->
+        <attr name="ucrop_aspect_ratio_x" format="float" />
+        <attr name="ucrop_aspect_ratio_y" format="float" />
+
+        <!--Overlay view-->
+        <attr name="ucrop_show_oval_crop_frame" format="boolean" />
+        <attr name="ucrop_circle_dimmed_layer" format="boolean" />
+        <attr name="ucrop_dimmed_color" format="color" />
+
+        <attr name="ucrop_grid_stroke_size" format="dimension" />
+        <attr name="ucrop_grid_color" format="color" />
+        <attr name="ucrop_grid_row_count" format="integer" />
+        <attr name="ucrop_grid_column_count" format="integer" />
+        <attr name="ucrop_show_grid" format="boolean" />
+
+        <attr name="ucrop_frame_stroke_size" format="dimension" />
+        <attr name="ucrop_frame_color" format="color" />
+        <attr name="ucrop_show_frame" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="ucrop_AspectRatioTextView">
+
+        <attr name="ucrop_artv_ratio_title" format="string" />
+
+        <attr name="ucrop_artv_ratio_x" format="float" />
+        <attr name="ucrop_artv_ratio_y" format="float" />
+
+    </declare-styleable>
+    <attr name="picture.title.textColor" format="reference|color" />
+    <attr name="picture.right.textColor" format="reference|color" />
+    <attr name="picture.leftBack.icon" format="reference" />
+    <attr name="picture.arrow_down.icon" format="reference" />
+    <attr name="picture.arrow_up.icon" format="reference" />
+    <attr name="picture.num.style" format="reference" />
+    <attr name="picture.checked.style" format="reference" />
+    <attr name="picture.bottom.bg" format="reference|color" />
+    <attr name="picture.preview.textColor" format="reference|color" />
+    <attr name="picture.complete.textColor" format="reference|color" />
+    <attr name="picture.ac_preview.title.textColor" format="reference|color" />
+    <attr name="picture.ac_preview.complete.textColor" format="reference|color" />
+    <attr name="picture.ac_preview.bottom.bg" format="reference|color" />
+    <attr name="picture.status.color" format="reference|color" />
+    <attr name="picture.ac_preview.title.bg" format="reference|color" />
+    <attr name="picture.preview.leftBack.icon" format="reference" />
+    <attr name="picture.statusFontColor" format="boolean" />
+    <attr name="picture.style.numComplete" format="boolean" />
+    <attr name="picture.style.checkNumMode" format="boolean" />
+    <attr name="picture.crop.toolbar.bg" format="reference|color" />
+    <attr name="picture.crop.status.color" format="reference|color" />
+    <attr name="picture.crop.title.color" format="reference|color" />
+    <attr name="picture.folder_checked_dot" format="reference" />
+
+
+    <declare-styleable name="PileLayout"><!--堆叠头像-->
+        <attr name="PileLayout_vertivalSpace" format="dimension"/>
+        <attr name="PileLayout_pileWidth" format="dimension"/>
+    </declare-styleable>
+
+    <!--圆角头像-->
+    <declare-styleable name="round_image_view">
+
+        <attr name="border_width" format="dimension" />
+
+        <attr name="border_incolor" format="color" />
+
+        <attr name="border_outcolor" format="color"></attr>
+        <!-- border_outcolor 外部圆圈的颜色 -->
+
+        <!-- border_incolor 内部部圆圈的颜色 -->
+
+        <!-- border_width 外圆和内圆的宽度 -->
+    </declare-styleable>
+    <!--日历-->
+    <declare-styleable name="CalendarView">
+
+        <attr name="week_background" format="color" /><!--星期栏背景色-->
+        <attr name="week_line_background" format="color" /><!--星期栏线的颜色-->
+        <attr name="week_text_color" format="color" /><!--星期栏文本颜色-->
+        <attr name="week_text_size" format="dimension" /><!--星期栏文本大小-->
+
+        <attr name="month_view" format="string" /><!--完全自定义月视图-->
+
+        <attr name="week_view" format="string" /> <!--完全自定义周视图-->
+        <attr name="week_bar_height" format="dimension" /> <!--星期栏的高度-->
+        <attr name="week_bar_view" format="string" /> <!--如果需要的话使用自定义星期栏-->
+
+        <attr name="scheme_text" format="string" /><!--标记的文本，一般可忽略-->
+        <attr name="day_text_size" format="dimension" /><!--日期字体大小-->
+        <attr name="lunar_text_size" format="dimension" /><!--农历字体大小-->
+        <attr name="calendar_height" format="dimension" /><!--日历卡的高度，每一项，不是整体-->
+        <attr name="scheme_text_color" format="color" /><!--标记的文本颜色-->
+        <attr name="scheme_month_text_color" format="color" /><!--标记的月字体颜色-->
+        <attr name="scheme_lunar_text_color" format="color" /><!--标记的农历字体颜色-->
+        <attr name="scheme_theme_color" format="color" /><!--标记的背景主题颜色-->
+
+        <attr name="selected_theme_color" format="color" /><!--选择的背景主题颜色-->
+        <attr name="selected_text_color" format="color" /><!--选中的月字体颜色-->
+        <attr name="selected_lunar_text_color" format="color" /><!--选中的农历字体颜色-->
+
+        <attr name="current_day_text_color" format="color" /><!--今天的日子字体颜色-->
+        <attr name="current_day_lunar_text_color" format="color" /><!--今天的日子农历字体颜色-->
+        <attr name="current_month_text_color" format="color" /><!--当前月份卡的月字体颜色，非今天所在的月份-->
+        <attr name="other_month_text_color" format="color" /><!--当前月份卡其它月字体颜色-->
+        <attr name="current_month_lunar_text_color" format="color" /><!--当前月份月农历颜色-->
+        <attr name="other_month_lunar_text_color" format="color" /><!--其它月份农历字体颜色-->
+
+
+        <!-- 年视图相关 -->
+        <attr name="year_view_month_text_size" format="dimension" /><!--年视图月字体大小-->
+        <attr name="year_view_day_text_size" format="dimension" /><!--年视图日字体大小-->
+        <attr name="year_view_month_text_color" format="color" /><!--年视图月字体颜色-->
+        <attr name="year_view_day_text_color" format="color" /><!--年视图日子字体颜色-->
+        <attr name="year_view_scheme_color" format="color" /><!--年视图标记字体颜色-->
+        <attr name="year_view_background" format="color" /><!--年视图背景-->
+
+        <!--日期范围-->
+        <attr name="min_year" format="integer" /><!--最小年份-->
+        <attr name="max_year" format="integer" /><!--最大年份-->
+        <attr name="min_year_month" format="integer" /><!--最小年份对应最小月份-->
+        <attr name="max_year_month" format="integer" /><!--最大年份对应月份-->
+
+        <!--月视图是否可滚动-->
+        <attr name="month_view_scrollable" format="boolean" />
+        <!--周视图是否可滚动-->
+        <attr name="week_view_scrollable" format="boolean" />
+        <!--年视图是否可滚动-->
+        <attr name="year_view_scrollable" format="boolean" />
+
+        <!-- 月份显示模式 -->
+        <attr name="month_view_show_mode">
+            <enum name="mode_all" value="0" />
+            <enum name="mode_only_current" value="1" />
+            <enum name="mode_fix" value="2" />
+        </attr>
+
+        <!-- 自定义周起始 -->
+        <attr name="week_start_with">
+            <enum name="sun" value="1" />
+            <enum name="mon" value="2" />
+            <enum name="sat" value="7" />
+        </attr>
+
+        <!--<attr name="select_mode">-->
+        <!--<enum name="default_mode" value="0"/>-->
+        <!--<enum name="single_mode" value="1"/>-->
+        <!--</attr>-->
+    </declare-styleable>
+
+
+    <declare-styleable name="CalendarLayout">
+        <attr name="default_status">
+            <enum name="expand" value="0" />
+            <enum name="shrink" value="1" />
+        </attr>
+
+        <attr name="calendar_show_mode">
+            <enum name="both_month_week_view" value="0" />
+            <enum name="only_week_view" value="1" />
+            <enum name="only_month_view" value="2" />
+        </attr>
+
+        <attr name="calendar_content_view_id" format="integer" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,60 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    api 'com.android.support:appcompat-v7:28.0.0'
+    api 'com.android.support:recyclerview-v7:27.0.2'
+    api  'io.reactivex.rxjava2:rxjava:2.0.5'
+    api  'io.reactivex.rxjava2:rxandroid:2.1.0'
+    api 'com.github.bumptech.glide:glide:4.5.0'
+    api 'com.android.support:cardview-v7:24.+'
+    api 'com.squareup.okhttp3:okhttp:3.10.0'
+    api 'com.squareup.picasso:picasso:2.71828'
+    api 'com.roughike:bottom-bar:2.3.1'
+    api 'com.alibaba:fastjson:1.1.70.android'
+    api 'com.baoyz.pullrefreshlayout:library:1.2.0'
+    //滚动广告
+    api 'com.youth.banner:banner:1.4.10'
+    //最新版本
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-20'
+    api 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-20'
+    //没有使用特殊Header，可以不加这行
+    //1.0.5 当1.1.0出现问题可以回退到1.0.5.1
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.5.1'
+    api 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.5.1'
+    //没有使用特殊Header，可以不加这行
+    api 'org.greenrobot:eventbus:3.1.1'
+//流式标签布局
+    api 'com.hyman:flowlayout-lib:1.1.2'
+    api 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+
+}

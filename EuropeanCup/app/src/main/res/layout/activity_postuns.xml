@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/postuns_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/edit_bag"
+                android:hint="请选择一场比赛"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/tblack"
+                android:textColorHint="#9A9A9A"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="预测胜负"
+                android:textColor="@color/tblack"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_zd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/uns_select"
+                    android:button="@color/transparent"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="主队"
+                    android:textColor="@drawable/uns_text" />
+
+                <RadioButton
+                    android:id="@+id/radio_ps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/uns_select"
+                    android:button="@color/transparent"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="平手"
+                    android:textColor="@drawable/uns_text" />
+
+                <RadioButton
+                    android:id="@+id/radio_kd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/uns_select"
+                    android:button="@color/transparent"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="客队"
+                    android:textColor="@drawable/uns_text" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/postuns_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_bag"
+                android:hint="请输入标题"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/tblack"
+                android:textColorHint="#9A9A9A"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="分析思路"
+                android:textColor="@color/tblack"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/postuns_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/edit_bag"
+                android:gravity="start"
+                android:hint="请输入分析思路"
+                android:minHeight="100dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/tblack"
+                android:textColorHint="#9A9A9A"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/postuns_sub"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/renzheng_red"
+                android:gravity="center"
+                android:text="发表"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

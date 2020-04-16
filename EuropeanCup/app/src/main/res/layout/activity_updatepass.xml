@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/loading_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:id="@+id/toplinear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:onClick="goBack"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:clickable="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:onClick="goBack"
+                        android:src="@drawable/web_back"
+                        android:tint="@color/white" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="修改密码"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/load_edit"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/loading_oldpass"
+                                android:layout_width="match_parent"
+                                android:layout_height="44dp"
+                                android:layout_weight="1"
+                                android:background="@color/transparent"
+                                android:gravity="center_vertical"
+                                android:hint="密    码"
+                                android:maxLength="11"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:phoneNumber="true"
+                                android:textColor="@color/white"
+                                android:textColorHint="#ededed"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/loading_oldpass_delete"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/load_edit"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/loading_pass"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="44dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:hint="新密码"
+                                    android:maxLength="6"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:password="true"
+                                    android:phoneNumber="true"
+                                    android:textColor="@color/white"
+                                    android:textColorHint="#ededed"
+                                    android:textSize="16sp" />
+
+                                <ImageView
+                                    android:id="@+id/loading_pass_delete"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/load_edit"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/loading_newpass"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="44dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/transparent"
+                                    android:gravity="center_vertical"
+                                    android:hint="新密码"
+                                    android:maxLength="6"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:password="true"
+                                    android:phoneNumber="true"
+                                    android:textColor="@color/white"
+                                    android:textColorHint="#ededed"
+                                    android:textSize="16sp" />
+
+                                <ImageView
+                                    android:id="@+id/loading_newpass_delete"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/load_edit"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <EditText
+                                        android:id="@+id/loading_code"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="44dp"
+                                        android:layout_weight="2"
+                                        android:background="@android:color/transparent"
+                                        android:gravity="center_vertical"
+                                        android:hint="验证码"
+                                        android:maxLength="6"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:phoneNumber="true"
+                                        android:textColor="@color/white"
+                                        android:textColorHint="#ededed"
+                                        android:textSize="16sp" />
+
+                                    <ImageView
+                                        android:id="@+id/loading_code_delete"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:visibility="gone" />
+                                </LinearLayout>
+
+                                <cn.com.imageselect.widget.CountDownTextView
+                                    android:id="@+id/loading_btn"
+                                    android:layout_width="120dp"
+                                    android:layout_height="44dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_weight="0"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center"
+                                    android:text="获取验证码"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/loading_load"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/loading_button"
+                    android:text="确定"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

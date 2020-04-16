@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toplinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rank_top">
+
+        <!--标题 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/rank_slidingTabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/transparent"
+        app:tl_indicator_color="@color/colorAccent"
+        app:tl_indicator_margin_bottom="5dp"
+        app:tl_indicator_margin_left="5dp"
+        app:tl_indicator_margin_right="5dp"
+        app:tl_indicator_style="NORMAL"
+        app:tl_indicator_width_equal_title="false"
+        app:tl_tab_space_equal="false"
+        app:tl_textSelectColor="@color/colorAccent"
+        app:tl_textUnselectColor="@color/nblack"
+        app:tl_textsize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#E0E0E0" />
+
+    <!--<cn.com.imageselect.widget.MyViewPager-->
+        <!--android:id="@+id/rank_viewPager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp" />-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/rank_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+</LinearLayout>

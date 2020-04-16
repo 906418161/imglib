@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/alllinear"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/detailsteam_radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/detailsteam_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_select"
+            android:button="@color/transparent"
+            android:checked="true"
+            android:gravity="center"
+            android:text="土耳其"
+            android:textColor="@color/tblack"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/detailsteam_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/radio_select"
+            android:button="@color/transparent"
+            android:gravity="center"
+            android:text="乌克兰"
+            android:textColor="@color/tblack"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/home_img"
+        android:drawablePadding="5dp"
+        android:text="战力"
+        android:textColor="@color/tblack"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/detailsteam_zhanli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="北马其顿主场战力尚可，球队在小组赛中主场除了输给波兰和奥地利，对阵拉脱维亚和斯洛文尼亚都取胜，最近16场主场作战的赛事，只被土耳其和波兰零封过，主场进攻有保障。"
+        android:textColor="@color/tblack"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/home_img"
+        android:drawablePadding="5dp"
+        android:text="阵容"
+        android:textColor="@color/tblack"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/detailsteam_zhengrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="北马其顿阵中没有特别的大牌球星，不过多数球员都效力于欧洲的联赛，本次大名单中由35岁的老将潘德夫领衔，此外还征召了莱万特中场新星巴德西，是实力大于名气的球队。"
+        android:textColor="@color/tblack"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

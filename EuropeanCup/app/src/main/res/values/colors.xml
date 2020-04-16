@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#00A0E9</color>
+    <color name="tblack">#333333</color>
+    <color name="gblack">#666666</color>
+    <color name="nblack">#999999</color>
+    <color name="carbar">#cfe4ff</color>
+    <color name="matchStart">#fe5046</color>
+    <color name="shape">#EAEAEA</color>
+    <color name="shapeStart">#FE5147</color>
+    <color name="shapeEnd">#FB9684</color>
+</resources>

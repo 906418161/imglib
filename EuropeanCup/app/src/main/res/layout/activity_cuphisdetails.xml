@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#EDEDED" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/home_img"
+                android:drawablePadding="5dp"
+                android:text="概述"
+                android:textColor="@color/tblack"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/hisdetails_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:text="2008年第十三届欧洲杯回顾"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/hisdetails_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:text="2008年，第十三届欧洲杯由奥地利和瑞士联合承办。西班牙一路高歌猛进，在决赛中1-0击败德国，斗牛士时隔44年再次登上欧洲之巅。阿拉贡内斯执教的球队在淘汰赛阶段3场比赛中先后击败了传统强队意大利，当届比赛黑马荷兰以及另一支传统强队德国。"
+                android:textColor="@color/tblack"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="最佳球员:"
+                    android:textColor="#00A0E9"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/hisdetails_bestplayer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="哈维（西班牙）"
+                    android:textColor="@color/tblack"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="最佳射手:"
+                    android:textColor="#00A0E9"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/hisdetails_bestshooter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="比利亚（西班牙），4球"
+                    android:textColor="@color/tblack"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="欧洲冠军:"
+                    android:textColor="#00A0E9"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/hisdetails_champion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="西班牙"
+                    android:textColor="@color/tblack"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#EDEDED" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/home_img"
+                android:drawablePadding="5dp"
+                android:text="历史概述"
+                android:textColor="@color/tblack"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/hisdetails_stitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:text="西班牙时隔44年再登顶"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/hisdetails_simg"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_margin="10dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/hisdetails_scontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="2008年，第十三届欧洲杯由奥地利和瑞士联合承办。西班牙与俄罗斯、瑞典和希腊同分在D组。可以说斗牛士军团的签运相当不错v瑞典和希腊同分在D组。可以说斗牛士军团的签运相当不错... "
+                android:textColor="@color/tblack"
+                android:textSize="14sp"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#EDEDED" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/home_img"
+                android:drawablePadding="5dp"
+                android:text="比赛成绩"
+                android:textColor="@color/tblack"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:text="比赛一览"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="决赛:"
+                    android:textColor="#00A0E9"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/hisdetails_finals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="德国0-1西班牙"
+                    android:textColor="@color/tblack"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="半决赛:"
+                    android:textColor="#00A0E9"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/hisdetails_semifinal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="德国3-2土耳其    俄罗斯0-3西班牙"
+                    android:textColor="@color/tblack"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="1/4决赛:"
+                    android:textColor="#00A0E9"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/hisdetails_quartermatch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="德国3-2土耳其  俄罗斯0-3西班牙 葡萄牙2-3德国 克罗地亚1-1土耳其(点)"
+                    android:textColor="@color/tblack"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#EDEDED" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/home_img"
+                android:drawablePadding="5dp"
+                android:text="最佳阵容"
+                android:textColor="@color/tblack"
+                android:textSize="15dp" />
+            <TextView
+                android:id="@+id/hisdetails_dtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:text="西班牙时隔44年再登顶"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+            <ImageView
+                android:id="@+id/hisdetails_dimg"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_margin="10dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/hisdetails_dcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="守门员：布冯（意大利）"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#EDEDED" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/home_img"
+                android:drawablePadding="5dp"
+                android:text="海报吉祥物"
+                android:textColor="@color/tblack"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="海报"
+                        android:textColor="@color/tblack"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/hisdetails_poster"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="吉祥物"
+                        android:textColor="@color/tblack"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/hisdetails_mascot"
+                        android:layout_width="match_parent"
+                        android:layout_height="210dp"
+                        android:layout_marginTop="10dp"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#EDEDED" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/home_img"
+                android:drawablePadding="5dp"
+                android:text="精彩图集"
+                android:textColor="@color/tblack"
+                android:textSize="15dp" />
+
+            <cn.com.imageselect.widget.ThisGridView
+                android:id="@+id/hisdetails_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:horizontalSpacing="10dp"
+                android:listSelector="@color/transparent"
+                android:numColumns="2"
+                android:padding="10dp"
+                android:scrollbars="none"
+                android:verticalSpacing="10dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

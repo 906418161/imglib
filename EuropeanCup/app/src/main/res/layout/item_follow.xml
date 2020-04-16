@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp">
+
+            <cn.com.imageselect.widget.RoundImageView
+                android:id="@+id/follow_head"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/allbg" />
+
+            <ImageView
+                android:id="@+id/follow_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="4dp"
+                android:src="@drawable/people_v" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/follow_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拯救地球好累"
+                android:textColor="@color/tblack"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/follow_fans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="粉丝:0"
+                android:textColor="@color/gblack"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/follow_sig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="流沙包跟拯救地球好累的一天"
+                android:textColor="@color/nblack"
+                android:visibility="gone"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/follow_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/people_follow" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ededed" />
+</LinearLayout>

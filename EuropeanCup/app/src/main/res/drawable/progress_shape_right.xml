@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="0dp" />
+            <solid android:color="@color/shape" />
+        </shape>
+    </item>
+
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="0dp" />
+                <gradient
+                    android:endColor="@color/shape"
+                    android:startColor="@color/shape" />
+            </shape>
+        </clip>
+    </item>
+
+    <item android:id="@android:id/progress">
+        <clip
+            android:clipOrientation="horizontal"
+            android:gravity="right">
+            <shape>
+                <corners android:radius="5dp" />
+                <gradient
+                    android:endColor="@color/shapeStart"
+                    android:startColor="@color/shapeEnd" />
+            </shape>
+        </clip>
+    </item>
+</layer-list><!--<?xml version="1.0" encoding="utf-8"?>--><!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+    <!--&lt;!&ndash;设置ProgressBar背景色&ndash;&gt;--><!--<item--><!--android:id="@android:id/background"--><!--android:gravity="right">--><!--<shape>--><!--<solid android:color="@color/transparent" />--><!--<corners--><!--android:bottomLeftRadius="15dp"--><!--android:bottomRightRadius="15dp"--><!--android:topLeftRadius="15dp"--><!--android:topRightRadius="15dp" />--><!--</shape>--><!--</item>-->
+
+    <!--&lt;!&ndash;设置ProgressBar进度条颜色&ndash;&gt;--><!--<item android:id="@android:id/progress">--><!--<clip--><!--android:clipOrientation="horizontal"--><!--android:gravity="right">--><!--&lt;!&ndash;android:drawable="#3197E8"&ndash;&gt;--><!--<scale--><!--android:drawable="@color/right"--><!--android:scaleWidth="100%" />--><!--</clip>--><!--</item>-->
+
+    <!--</layer-list>-->

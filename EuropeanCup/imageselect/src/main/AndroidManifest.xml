@@ -1,0 +1,29 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.com.imageselect" >
+<application >
+        <provider
+        android:name="cn.com.imageselect.picture.PictureFileProvider"
+        android:authorities="${applicationId}.provider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+        android:name="cn.com.imageselect.picture.PictureSelectorActivity"
+        android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="cn.com.imageselect.picture.PicturePreviewActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+        android:name="cn.com.imageselect.picture.PictureVideoPlayActivity"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:screenOrientation="sensor" />
+        <activity android:name="cn.com.imageselect.picture.PictureExternalPreviewActivity" />
+        <activity android:name="cn.com.imageselect.ucrop.UCropActivity" />
+        <activity android:name="cn.com.imageselect.ucrop.PictureMultiCuttingActivity" />
+        <activity android:name="cn.com.imageselect.picture.PicturePlayAudioActivity" />
+        <activity android:name="cn.com.imageselect.ImageSelectActivity" />
+    </application>
+</manifest>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/view_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="投诉建议"
+            android:textColor="@color/tblack"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/question_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit_bag"
+            android:gravity="left"
+            android:hint="请输入内容"
+            android:minHeight="180dp"
+            android:padding="5dp"
+            android:textColor="@color/tblack"
+            android:textColorHint="@color/nblack"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="联系方式"
+            android:textColor="@color/tblack"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/question_qq"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_bag"
+            android:gravity="center_vertical"
+            android:hint="请输入手机号/QQ/邮箱"
+            android:padding="5dp"
+            android:textColor="@color/tblack"
+            android:textColorHint="@color/nblack"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/question_submit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/loading_button"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

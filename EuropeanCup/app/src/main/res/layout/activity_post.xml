@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EDEDED">
+
+
+                <EditText
+                    android:id="@+id/post_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/post_conten"
+                    android:gravity="top"
+                    android:hint="请输入内容"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/tblack"
+                    android:textColorHint="@color/gblack"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/post_title"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/post_title"
+                    android:gravity="center"
+                    android:hint="请输入标题"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/tblack"
+                    android:textColorHint="@color/gblack"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ededed">
+
+                <cn.com.imageselect.widget.ThisGridView
+                    android:id="@+id/post_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:horizontalSpacing="10dp"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:verticalSpacing="10dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="选择主题"
+                android:textColor="#ff333333"
+                android:textSize="14sp" />
+
+            <com.donkingliang.labels.LabelsView
+                android:id="@+id/post_labels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:isIndicator="false"
+                app:labelBackground="@drawable/lable_select"
+                app:labelTextColor="@drawable/leable_text"
+                app:labelTextPaddingBottom="5dp"
+                app:labelTextPaddingLeft="10dp"
+                app:labelTextPaddingRight="10dp"
+                app:labelTextPaddingTop="5dp"
+                app:labelTextSize="10sp"
+                app:lineMargin="10dp"
+                app:maxLines="3"
+                app:maxSelect="5"
+                app:minSelect="1"
+                app:selectType="SINGLE_IRREVOCABLY"
+                app:wordMargin="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/post_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/post_sub"
+                    android:gravity="center"
+                    android:text="发布"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
